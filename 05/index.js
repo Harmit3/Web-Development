@@ -7,7 +7,7 @@
 const age=20;
 const gender='male';
 
-if(age>=20 && gender=='male'){   //both conditions must be true
+if(age>=20 && gender=='male'){   //all conditions must be true
     console.log("You are a audult male");
 }
 

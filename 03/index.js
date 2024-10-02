@@ -74,6 +74,17 @@ if(0){  //since it is false so it can not get inside
 }
 
 
+//string*number=string
+//number+number && string+number will concate
+//string like 'a'*1 would not be number but output would be NaN(Not a Number)
+//string like '123'*1 make 123 as a number
+
+//typeOf operator will return the type
+console.log(typeof '123'); //----->String
+console.log(typeof 123); //----->nUMBER
+
+//NULL is object in typrof operator so if you will assign the value to any variable as a NULL then it will return an object.
+
 
 
 

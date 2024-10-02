@@ -19,7 +19,7 @@ var age="Harmit";
 console.log(age);   //will print Harmit
 
 
-//var's scopr is global
+//var's scope is global  -->introduced in older vesion of JS
 if(true){
     var age=15;  //age changed to 15 instead of Harmit
     console.log(age);
@@ -36,7 +36,7 @@ console.log(age2);  //will get output on console now
 
 
 
-//let & const has local scope
+//let & const has local scope -->introduced in newer vesion of JS
 
 let age3=25;          //you can define this two times (loop hole)
 console.log(age3);
@@ -50,7 +50,8 @@ console.log(age3);   //will print 25 as Harmit is for local scope only for let
 
 
 
-//const also has similiar value like let but can't change it once it is defined
+//const also has similiar value like let but can't change it's value once it is defined and while declaring we must need to define it.
+//cant leave it like const age;
 const age4=26;
 console.log(age4);
 age4=27;

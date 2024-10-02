@@ -58,4 +58,16 @@ showResult(4);   ---->  call function and print result
 
 // FUNCTION CAN ALSO RETURN FUNCTION AS WELL
 
+function add1(a,b,cb){
+    let result=a+b;
+    cb(result);
 
+    return ()=>console.log(result);    //can also write ()=>{console.log(result)}; OR  return function(){console.log(result)};
+}
+
+//add1(2,3,undefined)
+//or don't make callback leave an empty function
+
+let resultFunction=add1(2,4,()=>{});   //will not print anything on console 
+//to print we need to call resultFunction 
+resultFunction();
